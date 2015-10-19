@@ -1,10 +1,10 @@
-package com.wesleyreisz.mymusic;
+package com.marksmith.assignment5;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
 
-import com.wesleyreisz.mymusic.model.Song;
-import com.wesleyreisz.mymusic.service.MockMusicService;
+import com.marksmith.assignment5.model.Song;
+import com.marksmith.assignment5.service.MockMusicService;
 
 import junit.framework.Assert;
 
@@ -25,7 +25,8 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 
         boolean testResultFound=false;
         for(Song song:songs){
-            if (song.getAlbumTitle().equalsIgnoreCase("Dark Horse")){
+            if (song.getAlbumTitle().equalsIgnoreCase("Dark Horse") ||
+                    song.getSongTitle().equalsIgnoreCase("Dark Horse")){
                 testResultFound=true;
             }
         }
@@ -35,7 +36,7 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
     public void testFindOne(){
         MockMusicService service = new MockMusicService();
         Song song = service.findOne("Dark Horse");
-        Assert.assertEquals("Dark Horse", song.getAlbumTitle());
+        Assert.assertEquals("Dark Horse", song.getSongTitle());
         Assert.assertEquals("Katy Perry", song.getArtistName());
         Assert.assertEquals("Single", song.getAlbumTitle());
     }

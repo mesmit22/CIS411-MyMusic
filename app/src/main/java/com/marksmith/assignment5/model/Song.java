@@ -1,4 +1,4 @@
-package com.wesleyreisz.mymusic.model;
+package com.marksmith.assignment5.model;
 
 import java.util.Date;
 

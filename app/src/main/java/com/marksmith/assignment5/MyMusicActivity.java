@@ -1,4 +1,4 @@
-package com.wesleyreisz.mymusic;
+package com.marksmith.assignment5;
 
 import android.app.Activity;
 import android.os.Bundle;

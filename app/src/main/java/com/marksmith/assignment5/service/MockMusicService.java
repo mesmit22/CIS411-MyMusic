@@ -1,11 +1,11 @@
-package com.wesleyreisz.mymusic.service;
+package com.marksmith.assignment5.service;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import com.wesleyreisz.mymusic.model.Song;
+import com.marksmith.assignment5.model.Song;
 
 /**
  * Created by wesleyreisz on 10/16/14.
